@@ -1,4 +1,4 @@
-import * as uno from "./../uno";
+import * as uno from "./uno";
 
 //functions
 function asegurarPlayers() {
