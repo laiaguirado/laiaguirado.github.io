@@ -1,0 +1,17 @@
+.details-game-page{
+    background-color: #222;
+    margin: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details-game-page #details-game-card{
+    background-color: white;
+    border: 0.3rem solid rgb(71, 71, 71);
+    border-radius: 2rem;
+    width: 75rem;
+    height: auto;
+    margin: 5rem;
+}
+

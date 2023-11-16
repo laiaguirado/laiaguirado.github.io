@@ -1,0 +1,74 @@
+.games{
+    background-color: #222;
+}
+
+.games .games-top-info{
+    padding: 0rem 6rem;
+}
+
+.games #title-games-page,.games #subtitle-games-page{
+    color: white;
+    padding: 1rem 0rem 0rem 0rem;
+    margin:0rem;
+}
+
+.games #subtitle-games-page{
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+.games .buttons{
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.games .buttons p{
+    display: flex;
+    align-items: center;
+}
+
+.games .button-order-by{
+    cursor: pointer;
+    border-radius: 0.5rem;
+    height: 3rem;
+    width: auto;
+    font-size: 1rem;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid hsla(0, 2%, 83%, 0.655);
+    margin: 1.2rem 0.5rem 1.2rem 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+ .games .button-order-by:hover{
+    background-color: hsla(0, 2%, 83%, 0.655);
+    border: 2px solid rgba(255, 255, 255, 0.53);
+    transform: scale(1.1);
+}
+
+.games .gamesList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.games .game-card{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 1.5rem;
+    margin: 0.8rem;
+    margin-bottom: 1rem;
+    background-color: rgb(255, 255, 255);
+    border-color: black;
+    border: 4px solid hsla(0, 2%, 83%, 0.655);
+    border-radius: 1rem;
+    transition: all 0.1s ease-in-out;
+}
+
+.games .game-card:hover{
+    background-color: hsla(0, 2%, 83%, 0.655);
+    border: 2px solid rgba(255, 255, 255, 0.53);
+    cursor: pointer;
+    transform: scale(1.1);
+}
