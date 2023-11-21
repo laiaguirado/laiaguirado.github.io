@@ -10,7 +10,6 @@ app.use(cors());
 app.use(morgan("dev"));
 app.use(express.json());
 
-app.use("/", express.static("../../frontend / dist"));
 
 require('./trivial/trivial.controllers').addRoutesTo(app);
 
