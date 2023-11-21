@@ -1,3 +1,4 @@
+"use strict"
 const express = require("express");
 const cors = require("cors");
 const morgan = require("morgan");
@@ -15,7 +16,7 @@ require('./trivial/trivial.controllers').addRoutesTo(app);
 
 const start = async () => {
     await db.connect();
-    app.listen("8080", () => {
+    app.listen(8080, () => {
         const mode = "development".toUpperCase();
         console.log(`Trivial API Server (mode ${mode}) listening on port :8080`);
     });
