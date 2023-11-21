@@ -11,13 +11,17 @@ const envVarNames = [
   "DB_PASSWORD",
   "DB_HOST",
   "DB_PORT",
-  "DB_DATABASE",
+  "DB_DATABASE"
+];
+
+const envVarAtlasNames = [
   "DB_ATLAS_PASSWORD"
 ];
 
+
 let envVars = {};
 
-envVarNames.forEach(varName => {
+envVarAtlasNames.forEach(varName => {
   if (process.env[varName] === undefined) {
     throw new Error(`Missing environment variable '${varName}'`);
   }
@@ -37,6 +41,6 @@ const getMongoAtlasUrl = () => {
 module.exports = {
   ...envVars,
   isDevelopment: process.env.NODE_ENV === "development",
-  MONGO_URL: getMongoURL(),
+  //MONGO_URL: getMongoURL(),
   MONGO_ATLAS_URL: getMongoAtlasUrl()
 }
