@@ -1,5 +1,4 @@
-
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 const trivialSchema = mongoose.Schema({
     numQuestion: {
@@ -33,6 +32,6 @@ const trivialSchema = mongoose.Schema({
     ]
 });
 
-const Trivial = mongoose.model('trivial', trivialSchema);
+//const Trivial = mongoose.model('trivial', trivialSchema);
 
-module.exports = Trivial;
+export default { trivialSchema };

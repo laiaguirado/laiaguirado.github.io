@@ -1,9 +1,8 @@
-"use strict"
-const express = require("express");
-const cors = require("cors");
-const morgan = require("morgan");
-const config = require("./config");
-const db = require("./db");
+import express from 'express';
+import cors from 'cors';
+import morgan from 'morgan';
+import db from './db.js'
+import trivialControllers from "./trivial/trivial.controllers.js";
 
 const app = express();
 
@@ -12,7 +11,8 @@ app.use(morgan("dev"));
 app.use(express.json());
 
 
-require('./trivial/trivial.controllers').addRoutesTo(app);
+trivialControllers.addRoutesTo(app);
+
 
 const start = async () => {
     await db.connect();

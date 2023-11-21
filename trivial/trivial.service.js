@@ -1,5 +1,7 @@
+import mongoose from 'mongoose';
+import trivialSchema from "./trivial.model.js";
 
-const Trivial = require('./trivial.model');
+const Trivial = mongoose.model('trivial', trivialSchema);
 
 const getAllTrivial = () => {
     return Trivial.find().sort({ numQuestion: 1 }).lean().exec();
@@ -43,6 +45,4 @@ const getTrivialByDifficultyWithNumLimit = (difficulty, num) => {
     return Trivial.find({ difficulty }).limit(num).lean().exec();
 }
 
-
-
-module.exports = { getAllTrivial, getTrivial, createTrivial, deleteTrivial, getAllTrivialByCategory, getAllTrivialByDifficulty, getAllTrivialByCategoryAndDifficulty, getTrivialByDifficultyWithNumLimit, getTrivialByCategoryWithNumLimit }
+export default { getAllTrivial, getTrivial, createTrivial, deleteTrivial, getAllTrivialByCategory, getAllTrivialByDifficulty, getAllTrivialByCategoryAndDifficulty, getTrivialByDifficultyWithNumLimit, getTrivialByCategoryWithNumLimit }

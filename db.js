@@ -1,11 +1,10 @@
-
-const mongoose = require('mongoose');
-const config = require('./config');
+import mongoose from 'mongoose';
+import config from './config.js'
 
 const connect = async () => {
   try {
-    let localUrl = config.MONGO_URL;
-    let dataBaseUrl = config.MONGO_ATLAS_URL;
+    //let localUrl = config.MONGO_URL;
+    let dataBaseUrl = config.getMongoAtlasUrl();
     await mongoose.connect(dataBaseUrl);
     console.log("Mongoose connected");
   } catch (e) {
@@ -17,7 +16,8 @@ const disconnect = async () => {
   return mongoose.connection.close();
 }
 
-module.exports = {
+/*module.exports = {
   connect,
   disconnect,
-}
+}*/
+export default { connect, disconnect }
