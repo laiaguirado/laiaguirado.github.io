@@ -1,5 +1,10 @@
 const trivial = require("./trivial.service");
 
+const getBasic = async (req, res) => {
+    res.status(500).json({ trvial: 'Trivial API' });
+}
+
+
 const getAllTrivial = async (req, res) => {
     try {
         const result = await trivial.getAllTrivial();
@@ -109,6 +114,7 @@ const getTrivialByDifficultyWithNumLimit = async (req, res) => {
 }
 
 const addRoutesTo = (app) => {
+    app.get("/", getBasic)
     app.get("/trivials", getAllTrivial);
     app.get("/trivial/:numQuestion", getTrivial);
     app.post("/trivial", createTrivial);
