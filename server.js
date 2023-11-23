@@ -20,7 +20,7 @@ const start = async () => {
     await db.connect();
     app.listen(SERVER_PORT, () => {
         const mode = "development".toUpperCase();
-        console.log(`Trivial API Server (mode ${mode}) listening on port :8080`);
+        console.log(`Trivial API Server (mode ${mode}) listening on port :${SERVER_PORT}`);
     });
 };
 
