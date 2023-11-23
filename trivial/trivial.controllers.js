@@ -114,7 +114,7 @@ const getTrivialByDifficultyWithNumLimit = async (req, res) => {
 }
 
 const addRoutesTo = (app) => {
-    app.get("/", getBasic)
+    app.get("/", getBasic);
     app.get("/trivials", getAllTrivial);
     app.get("/trivial/:numQuestion", getTrivial);
     app.post("/trivial", createTrivial);
@@ -126,7 +126,4 @@ const addRoutesTo = (app) => {
     app.get("/trivials/difficulty/:difficulty/:num", getTrivialByDifficultyWithNumLimit);
 };
 
-/*module.exports = {
-    addRoutesTo,
-};*/
 export default { addRoutesTo }

@@ -32,6 +32,6 @@ const trivialSchema = mongoose.Schema({
     ]
 });
 
-//const Trivial = mongoose.model('trivial', trivialSchema);
+const Trivial = mongoose.model('trivial', trivialSchema);
 
-export default { trivialSchema };
+export default { Trivial };
