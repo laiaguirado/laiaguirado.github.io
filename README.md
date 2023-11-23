@@ -3,7 +3,7 @@
 To run the script you have to:
 
 - Do "npm install" to create the node_modules directory in the frontend directory.
-- Do "npm run dev" in the frontend directory to play the game.
+- Do "npm run dev" to play the game.
 
 To play the game you have to:
 
