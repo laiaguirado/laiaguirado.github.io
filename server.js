@@ -13,7 +13,6 @@ app.use(express.json());
 
 trivialControllers.addRoutesTo(app);
 
-
 const start = async () => {
     await db.connect();
     app.listen(8080, () => {

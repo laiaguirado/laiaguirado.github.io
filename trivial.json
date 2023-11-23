@@ -1,0 +1,54 @@
+{
+  "trivialList": [
+    {
+      "_id": "655d3c0eddc495aaca1f17e3",
+      "numQuestion": 1,
+      "question": "¿Cuál es la capital de España?",
+      "difficulty": "easy",
+      "category": "geography",
+      "answers": [
+        {
+          "answer": "Barcelona",
+          "isCorrect": false
+        },
+        {
+          "answer": "Madrid",
+          "isCorrect": true
+        },
+        {
+          "answer": "Valencia",
+          "isCorrect": false
+        },
+        {
+          "answer": "Sevilla",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "_id": "655cf40fbc84bc7fb71e8caf",
+      "numQuestion": 4,
+      "question": "¿Cómo se llama el océano más grande del mundo?",
+      "difficulty": "easy",
+      "category": "geography",
+      "answers": [
+        {
+          "answer": "Ártico",
+          "isCorrect": false
+        },
+        {
+          "answer": "Pacífico",
+          "isCorrect": true
+        },
+        {
+          "answer": "Índico",
+          "isCorrect": false
+        },
+        {
+          "answer": "Atlántico",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

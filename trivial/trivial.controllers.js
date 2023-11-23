@@ -1,7 +1,7 @@
 import trivial from "./trivial.service.js"
 
 const getBasic = async (req, res) => {
-    res.status(500).json({ trvial: 'Trivial API' });
+    res.status(500).json({ trivial: 'Trivial API' });
 }
 
 
