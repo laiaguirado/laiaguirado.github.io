@@ -382,9 +382,9 @@ class Card {
   showImage(name) {
     //mostrar la imagen de la carta (solo las que sean visibles)
     if (this.isVisible == true) {
-      return "./images/cards/" + name + ".png";
+      return "/images/cards/" + name + ".png";
     } else {
-      return "./images/cards/" + "uno-reves" + ".png";
+      return "/images/cards/" + "uno-reves" + ".png";
     }
   }
 } //end Card
