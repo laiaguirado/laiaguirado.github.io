@@ -2,12 +2,10 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const envVarNames = [
-    "NODE_ENV",
     "SERVER_PORT",
     "DB_ATLAS_USER",
     "DB_ATLAS_PASSWORD",
     "DB_ATLAS_HOST",
-    "FRONTEND_DIR",
     "DB_LOCAL_USER",
     "DB_LOCAL_PASSWORD",
     "DB_LOCAL_HOST",
